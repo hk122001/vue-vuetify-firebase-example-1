@@ -1,6 +1,6 @@
 # vue-project
 
-This template should help get you started developing with Vue 3 in Vite.
+This project uses the Vue 3 and Vite template in order to implement a basic front end app, displaying a student's basic information, followed by a list of their subjects pulled from Firebase.
 
 ## Recommended IDE Setup
 
