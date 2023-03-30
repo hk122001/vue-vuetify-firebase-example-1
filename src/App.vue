@@ -1,15 +1,17 @@
 <template>
   <v-app id="inspire">
     <v-app-bar color="#384FFE">
-      <v-img
+      <template v-slot:prepend>
+        <v-img
         src="src\assets\logoTec.png"
         width="250" 
         maxheight="250">
       </v-img>
+      </template>
       <template v-slot:append>
         <v-tabs>
-          <v-tab>Inicio</v-tab>
-          <v-tab>Lista de Materias</v-tab>
+          <v-tab><p>Inicio</p></v-tab>
+          <v-tab><p>Lista de Materias</p></v-tab>
         </v-tabs>
       </template>
     </v-app-bar>

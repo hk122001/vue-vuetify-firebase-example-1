@@ -7,15 +7,26 @@
 }
 
 .rounded-image {
+  margin-top: 30px;
+  margin-bottom: 30px;
   border-radius: 50%
 }
 
-p,
-.text-primary {
-  color: #384FFE
+p{
+  color: #FFFFFF;
+  font-family: "Arial";
+  font-weight: 700
 }
-.text-secondary {
-  color: #787C9D
+
+p.text-primary {
+  color: #384FFE !important
+}
+p.text-secondary {
+  color: #787C9D !important
+}
+
+h1.text-primary {
+  color: #384FFE !important
 }
 
 a,
