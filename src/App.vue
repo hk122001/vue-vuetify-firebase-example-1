@@ -11,7 +11,7 @@
       <template v-slot:append>
         <v-tabs>
           <RouterLink to="/"><v-tab><p>Inicio</p></v-tab></RouterLink>
-          <RouterLink to="/WelcomeItem"><v-tab><p>Lista de Materias</p></v-tab></RouterLink>
+          <RouterLink to="/materias"><v-tab><p>Lista de Materias</p></v-tab></RouterLink>
         </v-tabs>
       </template>
     </v-app-bar>
