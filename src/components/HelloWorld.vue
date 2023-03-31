@@ -32,6 +32,7 @@
             <p class="text-secondary">Salón: {{ materia.classroom }}</p>
             <p class="text-secondary">Días: <p v-for="dia in materia.dias" class="text-secondary"> {{ dia }}</p> {{ Object.keys(materia.days).length }}</p>
             <p class="text-secondary">Horario: {{ materia.schedule }}</p>
+            <!-- test -->
           </div>
           <v-row>
             <v-spacer />
