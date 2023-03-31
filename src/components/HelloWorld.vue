@@ -5,25 +5,10 @@
 
   let numberOfSubjects = obj.materias.length;
   let dialog = ref(false)
-  const props = defineProps({
-    title: {
-      type: String,
-      required: true
-    },
-    professor: {
-      type: String,
-      required: true
-    },
-    classroom: {
-      type: String
-    },
-    days: {
-      type: Array
-    },
-    schedule: {
-      type: String
-    }
-})
+  let dialogArray = []
+  for(let i = 0; i < numberOfSubjects; i++){
+    dialogArray.push(false)
+  }
 </script>
 
 <template>
@@ -35,11 +20,11 @@
       <v-btn
         color="#384FFE"
         variant="text"
-        @click="editStudent(index-1)"
+        @click="dialogArray[index-1] = true"
         >
         <p class="text-primary font-weight-bold capitalize text-h6">Ver detalles</p>
       </v-btn>
-      <v-dialog v-model="dialog" activator="parent">
+      <v-dialog v-model="dialogArray[index-1]">
         <v-sheet class="pa-8 mx-auto" width="100%" max-width="800" elevation="2" rounded="xl">
           <h3 class="dialog_title">{{ obj.materias[index-1].title }}</h3>
           <div class="dialog_info">
@@ -54,7 +39,7 @@
               color="#384FFE"
               block
               variant="text"
-              @click="dialog = false"
+              @click="dialogArray[index-1] = false"
               >
               <p class="text-primary font-weight-bold text-h6">CERRAR</p>
             </v-btn>
