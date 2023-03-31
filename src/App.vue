@@ -9,7 +9,7 @@
       </v-img>
       </template>
       <template v-slot:append>
-        <v-tabs>
+        <v-tabs color="#384FFE">
           <RouterLink to="/"><v-tab><p>Inicio</p></v-tab></RouterLink>
           <RouterLink to="/materias"><v-tab><p>Lista de Materias</p></v-tab></RouterLink>
         </v-tabs>

@@ -24,6 +24,9 @@ p.text-primary {
 p.text-secondary {
   color: #787C9D !important
 }
+p.capitalize {
+  text-transform: capitalize;
+}
 
 h1.text-primary {
   color: #384FFE !important
