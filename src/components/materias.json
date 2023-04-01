@@ -1,27 +1,27 @@
 {
   "materias": [{
-    "title": "Título de la materia1",
+    "title": "Título de la materia",
     "professor": "Cristiano Ronaldo",
     "classroom": "La Congeladora",
     "days": ["Lunes", "Miercoles", "Viernes"],
     "schedule": "7:00 - 9:00"
   },
   {
-    "title": "Título de la materia2",
+    "title": "Título de la materia",
     "professor": "Cristiano Ronaldo",
     "classroom": "La Congeladora",
     "days": ["Lunes"],
     "schedule": "7:00 - 9:00"
   },
   {
-    "title": "Título de la materia3",
+    "title": "Título de la materia",
     "professor": "Cristiano Ronaldo",
     "classroom": "La Congeladora",
     "days": ["Lunes", "Miercoles"],
     "schedule": "7:00 - 9:00"
   },
   {
-    "title": "Título de la materia4",
+    "title": "Título de la materia",
     "professor": "Cristiano Ronaldo",
     "classroom": "La Congeladora",
     "days": ["Lunes", "Miercoles", "Viernes"],

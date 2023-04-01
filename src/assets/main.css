@@ -27,8 +27,19 @@ p.text-secondary {
 p.capitalize {
   text-transform: capitalize;
 }
+p.cards{
+  font-size: 17px;
+}
+p.titles{
+  font-size: 19px;
+  font-weight: bold;
+}
 
 h1.text-primary {
+  color: #384FFE !important
+}
+
+h2.text-primary {
   color: #384FFE !important
 }
 
