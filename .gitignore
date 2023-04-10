@@ -26,3 +26,6 @@ coverage
 *.njsproj
 *.sln
 *.sw?
+
+#Data for firebase log in which contains the API key.
+firebaseInfo.js

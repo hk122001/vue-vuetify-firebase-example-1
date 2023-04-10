@@ -24,6 +24,9 @@ p.text-primary {
 p.text-secondary {
   color: #787C9D !important
 }
+p.text-button {
+  color: white !important
+}
 p.capitalize {
   text-transform: capitalize;
 }
@@ -48,4 +51,17 @@ a,
   text-decoration: none;
   color: hsla(160, 100%, 37%, 1);
   transition: 0.4s;
+}
+
+.submit {
+  color: white;
+  font-weight: bold;
+  background-color: #384FFE;
+  width: 50%;
+}
+
+.blue {
+  color: #384FFE;
+  width: 50%;
+  font-weight: bold;
 }

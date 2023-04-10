@@ -1,5 +1,5 @@
 <script setup>
-import materias from '../components/HelloWorld.vue'
+  import materias from '../components/HelloWorld.vue'
 </script>
 
 <template>
@@ -7,3 +7,7 @@ import materias from '../components/HelloWorld.vue'
     <materias />
   </main>
 </template>
+
+<script>
+  
+</script>
