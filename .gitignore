@@ -28,4 +28,4 @@ coverage
 *.sw?
 
 #Data for firebase log in which contains the API key.
-firebaseInfo.js
+#firebaseInfo.js

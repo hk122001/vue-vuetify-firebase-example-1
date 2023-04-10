@@ -16,8 +16,12 @@
       }
   })
   async function logout() {
-    await signOut()
-    router.push('/login')
+    try{
+      await signOut(auth)
+      router.push('/login')
+    }catch{
+      console.log('sign out failed')
+    }
   }
 </script>
 
@@ -36,10 +40,10 @@
           <RouterLink to="/"><v-tab><p>Inicio</p></v-tab></RouterLink>
           <RouterLink to="/materias"><v-tab><p>Lista de Materias</p></v-tab></RouterLink>
           <v-img
-            src="src\assets\logout-variang.svg"
-            width="50" 
-            maxheight="50"
-            @onclick="logout">
+            src="src\assets\logout-variant.svg"
+            width="30" 
+            maxheight="30"
+            @click="logout">
           </v-img>
         </v-tabs>
       </template>

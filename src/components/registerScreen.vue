@@ -144,7 +144,7 @@
             variant="text"
             type="submit"
             >
-            <p class="text-button font-weight-bold text-h6">Iniciar sesión</p>
+            <p class="text-button font-weight-bold text-h6">Crear cuenta</p>
           </v-btn>
           <v-dialog v-model="alert.dialog">
             <v-sheet class="pa-8 mx-auto" width="100%" max-width="800" elevation="2" rounded="xl">

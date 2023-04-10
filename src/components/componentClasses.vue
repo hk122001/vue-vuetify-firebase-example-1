@@ -17,7 +17,11 @@
       else if(i != daysArray.length - 1){
         returnString = returnString + `${daysArray[i]}, `
       }else{
-        returnString = returnString + `& ${daysArray[i]}`
+        if(daysArray.length == 1){
+          returnString = returnString + `${daysArray[i]}`
+        }else{
+          returnString = returnString + `& ${daysArray[i]}`
+        }
       }
     }
     return returnString

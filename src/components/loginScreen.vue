@@ -27,7 +27,7 @@
     }
     try{
       const auth = getAuth()
-      await signInWithEmailAndPassword(auth, formData.value.email, formData.value.password)
+      await signInWithEmailAndPassword(auth, userCred.value.email, userCred.value.password)
       alert.value.dialog = false
       router.push('/')
     }catch (error){

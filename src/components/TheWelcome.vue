@@ -11,15 +11,22 @@
     career: ''
   })
   const userImage = ref('')
+  function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms || DEF_DELAY));
+  }
   onMounted(async () => {
-    const auth = getAuth()
-    const user = auth.currentUser
+    const auth =  getAuth()
+    let user =  auth.currentUser
+    while(!user){
+      await sleep(10)
+      user =  auth.currentUser
+    }
     const db = getFirestore()
     const docRef = doc(db, 'users', user.uid)
     const docSnap = await getDoc(docRef)
     const storage = getStorage()
     userImage.value = await getDownloadURL(storageRef(storage, 'juan-escutia2.jpeg'))
-    data.value = docSnap.data()
+    userCred.value = docSnap.data()
   })
 </script>
 
@@ -31,7 +38,7 @@
         max-height="250"
         cover
         class="rounded-image"
-        src="userImage">
+        src="https://firebasestorage.googleapis.com/v0/b/example-vue-firebase-322a1.appspot.com/o/juan-escutia2.jpeg?alt=media&token=0a188420-ebe4-4460-9a89-1d85efb9e8a8">
       </v-img>
     </v-container>
     <v-container fill-height fluid>
